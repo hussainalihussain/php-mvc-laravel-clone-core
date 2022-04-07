@@ -1,6 +1,6 @@
 <?php
 
-namespace app\core\form;
+namespace hussainalihussain\phpmvclaravelclonecore\form;
 
 class TextareaField extends Field
 {

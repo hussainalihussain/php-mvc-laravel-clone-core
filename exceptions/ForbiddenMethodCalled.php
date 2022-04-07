@@ -1,6 +1,6 @@
 <?php
 
-namespace app\core\exceptions;
+namespace hussainalihussain\phpmvclaravelclonecore\exceptions;
 
 class ForbiddenMethodCalled extends \Exception
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace app\core;
+namespace hussainalihussain\phpmvclaravelclonecore;
 
 abstract class Middleware
 {

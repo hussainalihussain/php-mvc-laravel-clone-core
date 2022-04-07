@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core\database;
+namespace hussainalihussain\phpmvclaravelclonecore\database;
 
-use app\core\Application;
+use hussainalihussain\phpmvclaravelclonecore\Application;
 
 abstract class QueryBuilder
 {

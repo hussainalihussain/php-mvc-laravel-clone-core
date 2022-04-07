@@ -1,6 +1,6 @@
 <?php
 
-namespace app\core\database;
+namespace hussainalihussain\phpmvclaravelclonecore\database;
 
 class Database
 {

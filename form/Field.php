@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core\form;
+namespace hussainalihussain\phpmvclaravelclonecore\form;
 
-use app\core\Model;
+use hussainalihussain\phpmvclaravelclonecore\Model;
 
 abstract class Field
 {

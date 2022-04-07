@@ -1,9 +1,9 @@
 <?php
 
-namespace app\core;
+namespace hussainalihussain\phpmvclaravelclonecore;
 
-use app\core\exceptions\ForbiddenMethodCalled;
-use app\core\exceptions\NotFoundException;
+use hussainalihussain\phpmvclaravelclonecore\exceptions\ForbiddenMethodCalled;
+use hussainalihussain\phpmvclaravelclonecore\exceptions\NotFoundException;
 
 class Router
 {

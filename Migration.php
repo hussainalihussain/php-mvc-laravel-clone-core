@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core;
+namespace hussainalihussain\phpmvclaravelclonecore;
 
-use app\core\database\Database;
+use hussainalihussain\phpmvclaravelclonecore\database\Database;
 
 class Migration
 {
