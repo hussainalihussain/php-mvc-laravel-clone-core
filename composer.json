@@ -2,6 +2,11 @@
     "name": "hussainalihussain/phpmvclaravelclonecore",
     "description": "PHP MVC Laravel Core",
     "type": "Library",
+    "autoload": {
+        "psr-4": {
+            "hussainalihussain\\phpmvclaravelclonecore\\": "."
+        }
+    },
     "require": {
         "vlucas/phpdotenv": "^5.4"
     },
