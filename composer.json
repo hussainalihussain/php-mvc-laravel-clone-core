@@ -1,0 +1,14 @@
+{
+    "name": "hussainalihussain/php-mvc-laravel-clone-core",
+    "description": "PHP MVC Laravel Core",
+    "type": "Library",
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    },
+    "authors": [
+        {
+            "name": "hussainaliweb",
+            "email": "79245466+hussainaliweb@users.noreply.github.com"
+        }
+    ]
+}
