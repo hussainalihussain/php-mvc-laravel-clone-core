@@ -3,9 +3,8 @@
 namespace hussainalihussain\phpmvclaravelclonecore;
 
 use hussainalihussain\phpmvclaravelclonecore\database\Database;
-use app\models\User;
 
-class Application
+class Application extends Event
 {
     /**
      * @var Router
@@ -65,6 +64,16 @@ class Application
         $this->session       = new Session();
         $this->userClassName = $config['userClassName'] ?? '';
     }
+	
+	public function registerErrorEvent(\Throwable $t)
+    {
+        $this->on(Event::EVENT_ERROR_OCCUR, function() use ($t) {
+            $this->response->setCode($t->getCode());
+            echo $this->view->renderView('_error', [
+                'exception'=> $t
+            ]);
+        });
+    }
 
     /**
      * @return void
@@ -73,14 +82,17 @@ class Application
     {
         try
         {
+			$this->trigger(EVENT::EVENT_BEFORE_REQUEST);
             echo $this->router->resolve();
         }
         catch (\Exception $e)
         {
-            $this->response->setCode($e->getCode());
-            echo $this->view->renderView('_error', [
-                'exception'=> $e
-            ]);
+            $this->registerErrorEvent($e);
+            $this->trigger(Event::EVENT_ERROR_OCCUR);
+        }
+		finally
+        {
+            $this->trigger(Event::EVENT_AFTER_REQUEST);
         }
     }
 
